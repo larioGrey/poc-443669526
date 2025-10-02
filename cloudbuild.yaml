@@ -1,0 +1,7 @@
+steps:
+- name: 'ubuntu'
+args: ['echo', 'Hello wrold!']
+
+options:
+machineType: 'E2_MEDIUM'
+logging: CLOUD_LOGGING_ONLY
