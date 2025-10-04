@@ -1,7 +1,7 @@
 steps:
-- name: 'ubuntu'
-args: ['echo', 'Hello wrold!']
+  - name: gcr.io/cloud-builders/gcloud
+    entrypoint: bash
+    args: ["-c", "echo 'Normal Tests'"]
 
 options:
-machineType: 'E2_MEDIUM'
-logging: CLOUD_LOGGING_ONLY
+  logging: CLOUD_LOGGING_ONLY
